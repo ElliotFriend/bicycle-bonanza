@@ -1,17 +1,22 @@
-package com.elliotfriend.bicyclebonanza_chapter3;
+package com.elliotfriend.bicyclebonanza;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
+import com.elliotfriend.bicyclebonanza.R;
 
-public class MyActivity extends Activity {
+public class TimerActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_timer);
+
+        TextView hello = (TextView)findViewById(R.id.hello);
+        hello.setText("On your bike!");
     }
 
 
